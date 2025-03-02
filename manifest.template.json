@@ -5,8 +5,10 @@
     "description": "Blocks access to X (Twitter) and its resources.",
     "permissions": [
       "declarativeNetRequest",
+      {{#if debug}}
       "declarativeNetRequestFeedback",
       "activeTab",
+      {{/if}}
       "webNavigation"
     ],
     "host_permissions": ["*://*.twitter.com/*", "*://twitter.com/*", "*://*.x.com/*", "*://x.com/*", "*://*.twimg.com/*", "*://twimg.com/*"],
