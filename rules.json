@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "priority": 2,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "extensionPath": "/blocked.html"
+        }
+      },
+      "condition": {
+        "urlFilter": "||twitter.com",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 2,
+      "priority": 2,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "extensionPath": "/blocked.html"
+        }
+      },
+      "condition": {
+        "urlFilter": "*.x.com*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 101,
+      "priority": 1,
+      "action": {
+        "type": "block"
+      },
+      "condition": {
+        "urlFilter": "||twimg.com",
+        "resourceTypes": [
+          "main_frame",
+          "sub_frame",
+          "stylesheet",
+          "script",
+          "image",
+          "font",
+          "object",
+          "xmlhttprequest",
+          "ping",
+          "csp_report",
+          "media",
+          "websocket",
+          "webtransport",
+          "webbundle",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": 102,
+      "priority": 1,
+      "action": {
+        "type": "block"
+      },
+      "condition": {
+        "urlFilter": "||x.com",
+        "resourceTypes": [
+          "sub_frame",
+          "stylesheet",
+          "script",
+          "image",
+          "font",
+          "object",
+          "xmlhttprequest",
+          "ping",
+          "csp_report",
+          "media",
+          "websocket",
+          "webtransport",
+          "webbundle",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": 103,
+      "priority": 1,
+      "action": {
+        "type": "block"
+      },
+      "condition": {
+        "urlFilter": "||twitter.com",
+        "resourceTypes": [
+          "sub_frame",
+          "stylesheet",
+          "script",
+          "image",
+          "font",
+          "object",
+          "xmlhttprequest",
+          "ping",
+          "csp_report",
+          "media",
+          "websocket",
+          "webtransport",
+          "webbundle",
+          "other"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "priority": 2,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "extensionPath": "/blocked.html"
+        }
+      },
+      "condition": {
+        "urlFilter": "*x.com*",
+        "resourceTypes": ["main_frame"]
+      }
+    }
+]
