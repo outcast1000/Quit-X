@@ -14,6 +14,6 @@ const isDebug = process.env.NODE_ENV === 'debug';
 const manifestContent = template({ debug: isDebug });
 
 // Write the manifest.json file
-fs.writeFileSync('manifest.json', manifestContent);
+fs.writeFileSync('./chrome/manifest.json', manifestContent);
 
 console.log(`manifest.json has been generated for ${isDebug ? 'debug' : 'production'} environment.`);
