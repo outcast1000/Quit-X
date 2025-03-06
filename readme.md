@@ -27,3 +27,14 @@ For debug:
 ```bash
 npm run build:debug
 ```
+
+## TODO
+
+- Create the same for firefox
+- build js script to create also the icons form a src image
+- build js script to create all the zips for firefox & chrome at the same time
+- Test it on pages with embedded tweets. eg https://www.capital.gr/diethni/3904538/starmer-den-mporoume-na-dextoume-mia-adunami-sumfonia-opos-tou-minsk-diamorfonoume-mia-summaxia-ton-prothumon-gia-tin-oukrania/
+- Add an option to enable / disable embedded tweets
+- Add an option to enable / disable the main apps
+- Create a different icon
+
